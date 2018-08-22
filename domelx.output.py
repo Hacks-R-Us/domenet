@@ -2,11 +2,9 @@
 import pika, time
 import json
 
+# Authenticate with RabbitMQ server
 with open('rabbitmq-auth.json') as f:
     auth_data = json.load(f)
-
-# Authenticate with RabbitMQ server
-print( auth_data["username"])
 mq_creds  = pika.PlainCredentials(
     auth_data["username"], auth_data["password"])
 mq_params = pika.ConnectionParameters(

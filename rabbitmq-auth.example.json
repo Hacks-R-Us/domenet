@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "username": "example",
+  "password": "example",
+  "vhost": "/",
+  "heartbeat": 0
+}

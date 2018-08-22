@@ -65,6 +65,6 @@ while True:
     if data:
         channel.basic_publish(exchange='domenet',
                     routing_key='server',
-                    body='data')
+                    body=data)
 
 channel.start_consuming()
